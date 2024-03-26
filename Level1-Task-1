@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level-1 Task-1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .heading {
+            font-size: 24px;
+        }
+        
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        
+        .navbar ul li {
+            margin-right: 20px;
+        }
+        
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        .sideNavigationBar {
+            background-color: #333;
+            color: #fff;
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: -250px;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        
+        .sideNavigationBar a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: #fff;
+            border-bottom: 1px solid #fff;
+        }
+        
+        .line {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        
+        .side1 h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        
+        .about {
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        
+        .about .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .about .title span {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .about .boxes {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        .about .box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+        
+        .about .box .topic a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .contact {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        
+        .contact .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .contact .title span {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .contact .contactMenu {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        .contact .input1 {
+            width: 60%;
+        }
+        
+        .contact .label1 {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .contact .input2 input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        .contact .button button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="heading">Landing Page</div>
+        <span class="sideMenuButton" onclick="openNavbar()">☰</span>
+        <div class="navbar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Side navigation bar for responsive website -->
+    <div class="sideNavigationBar" id="sideNavigationBar">
+        <a href="#" class="closeButton" onclick="closeNavbar()">❌</a>
+        <a href="#Home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Sign Up</a>
+    </div>
+
+    <!-- Content -->
+    <div class="line" id="Home">
+        <div class="side1">
+            <h1>LANDING PAGE</h1>
+            <button><a href="https://www.geeksforgeeks.org/">Explore More</a></button>
+        </div>
+        <div class="side2">
+            <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220401124017/HTML-Tutorial.png" width="500">
+        </div>
+    </div>
+
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title"><span>Courses</span></div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="topic"><a href="" target="_blank">DSA</a></div>
+                    <p>The term DSA stands for Data Structures and Algorithms. As the name itself suggests, it is a combination of two separate yet interrelated topics.</p>
+                </div>
+                <div class="box">
+                    <div class="topic"><a href="" target="_blank">HTML</a></div>
+                    <p>HTML stands for HyperText Markup Language. It is used to design web pages using the markup language.</p>
+                </div>
+                <div class="box">
+                    <div class="topic"><a href="" target="_blank">Javascript</a></div>
+                    <p>JavaScript (JS) is the most popular lightweight, interpreted compiled programming language.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="content">
+            <div class="title"><span>Sign Up</span></div>
+            <div class="contactMenu">
+                <div class="input1">
+                    <div class="label1">Your Name</
+                        div>
+                        <div class="input2">
+                            <input type="text"
+                                placeholder="Enter your Name here">
+                        </div>
+                        <div class="label1">
+                            <label>Your Email</label>
+                        </div>
+                        <div class="input2">
+                            <input type="text"
+                                placeholder="Enter your Email here">
+                        </div>
+                        <div class="label1">
+                            <label>Your Password</label>
+                        </div>
+                        <div class="input2">
+                            <input type="text"
+                                placeholder="Enter your Password here">
+                        </div>
+                        <div class="button">
+                            <button>Sign Up</button>
+                        </div>
+                    </div>
+                    <div class="input3">
+                        <div class="rightside1">
+                            <div class="title1">
+                                <span>
+                                    Contact Us
+                                </span>
+                            </div>
+                            <div class="content1">
+                                A-143, 9th Floor, Sovereign 
+                                Corporate Tower, Sector-136, 
+                                Noida, Uttar Pradesh - 201305
+                            </div>
+                            <div class="title1">
+                                <span>More Information</span>
+                            </div>
+                            <div class="content1">
+                                Greetings to all the members out there!
+                                We welcome you to the platform where we
+                                consistently strive to offer the best 
+                                of education. This platform has been 
+                                designed for every member wishing to 
+                                expand their knowledge, share their 
+                                knowledge and is ready to grab their 
+                                dream job. We have millions of articles,
+                                live as well as online courses, thousands 
+                                of tutorials and much more just for the 
+                                courage inside you.Thank you for choosing 
+                                and supporting us!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer section -->
+        <footer>
+            <div class="footer">
+                <span>
+                    Created By
+                    <a href="https://www.geeksforgeeks.org/"
+                        target="_blank">
+                        GeeksforGeeks
+                    </a>
+                </span>
+            </div>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+     
+    </html>
