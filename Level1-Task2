@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="UJJWAL's CV">
+    <meta name="keywords" content="UJJWAL, HTML, CV">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UJJWAL KUMAR SINGH CV</title>
+    <style>
+        body {
+            background-color: rgba(10, 241, 233, 0.625);
+        }
+        #name {
+            color: rgb(0, 28, 238);
+        }
+        #pos {
+            color: rgb(218, 74, 170);
+        }
+        #new {
+            display: inline-block;
+        }
+        #b {
+            color: rgb(12, 212, 215);
+            background-color: lightslategray;
+        }
+        #i {
+            border-style: initial;
+            background-color: lightgrey;
+        }
+        #a1 {
+            float: left;
+            width: 50%;
+        }
+        #a {
+            float: right;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="name">UJJWAL KUMAR SINGH</h1>
+    <h2 id="pos">Fresher</h2>
+    <p><b>To obtain a position that will demand the best of Professional ability in terms of Technical and Analytical skills and provides me the opportunity to raise their company's growth and personally utilizing my abilities.</b></p>
+    <hr>
+    <span id="info">Email id: us9870450929@gmail      </span>
+    <span id="info">Number: 9870450929      </span>
+    <span id="info">Resident: New Delhi, India      </span>
+    <br><br><br>
+    <span id="info">Github: <a href="https://github.com/UjjwalSingh0143" target="_blank">github/UJJWAL UjjwalSingh0143</a>   </span>
+    <hr>
+    <div id="a1">
+        <h2 id="name">Education</h2>
+        <h4>Bachelor in Computer Science and Engineering</h4>
+        <p>G.L.BAJAJ Institute of Technology and Management</p>
+        <span><i>09/2021 - 11/2025</i>    </span>
+        <span><i>Academic Score: 8 GPA</i></span>
+        <br><br>
+        <h4>Intermediate - Green Fields Public School</h4>
+        <p>CBSE Board, New Delhi, India</p>
+        <span><i>04/2019 - 04/2020</i>    </span>
+        <span><i>Academic Score: 88%</i></span>
+        <br><br>
+        <h4>High School - Green Fields Public School</h4>
+        <p>CBSE Board, Delhi, India</p>
+        <span><i>04/2017 - 11/2018</i>    </span>
+        <span><i>Academic Score: 83%</i></span>
+    </div>
+    <br><br>
+    <div id="a2">
+        <h2 id="name">Skills</h2>
+        <span id="b">C    </span>
+        <span id="b">C++    </span>
+        <span id="b">Python    </span>
+        <span id="b">Public Speaking    </span>
+        <span id="b">Leadership    </span>
+        <span id="b">Team player    </span>
+        <span id="b">Communication Skill    </span>
+    </div>
+    <br><br>
+    <div id="a1">
+        <h2 id="name">Personal Projects</h2>
+        <h4>Netflix Clone (09/2021 - 12/2021)</h4>
+        <p>Netflix Clone is an on-demand video streaming app solution that helps to launch your own on-demand OTT platform like Netflix, where you can watch unlimited movies & TV shows.</p>
+        <p><b>Technology used:</b> HTML, CSS, JavaScript, and APIs</p>
+        <h4>SafeVerse: Android Women Safety Application (09/2022 - 12/2022)
